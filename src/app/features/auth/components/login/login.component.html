@@ -1,0 +1,87 @@
+
+<div class="login-container">
+
+  <div class="login-card">
+
+    <!-- Branding -->
+    <div class="login-header">
+      <div class="logo">
+        <mat-icon>business</mat-icon>
+      </div>
+
+      <h1>Smart ERP</h1>
+      <p>Welcome back! Please login to your account.</p>
+    </div>
+
+    <!-- Login Form -->
+    <form class="login-form">
+
+      <!-- Email -->
+      <mat-form-field appearance="outline">
+        <mat-label>Email Address</mat-label>
+
+        <input
+          matInput
+          type="email"
+          placeholder="Enter your email"
+        />
+
+        <mat-icon matPrefix>mail</mat-icon>
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+
+        <input
+          matInput
+          type="password"
+          placeholder="Enter your password"
+        />
+
+        <mat-icon matPrefix>lock</mat-icon>
+
+        <button
+          mat-icon-button
+          matSuffix
+          type="button"
+          aria-label="Toggle password visibility"
+        >
+          <mat-icon>visibility</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <!-- Options -->
+      <div class="form-options">
+
+        <mat-checkbox>
+          Remember me
+        </mat-checkbox>
+
+        <a routerLink="/auth/forgot-password">
+          Forgot Password?
+        </a>
+
+      </div>
+
+      <!-- Login Button -->
+      <button
+        mat-flat-button
+        color="primary"
+        type="submit"
+        class="login-button"
+      >
+        Login
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+
+    </form>
+
+    <!-- Footer -->
+    <div class="login-footer">
+      <p>© 2026 ERP System. All rights reserved.</p>
+    </div>
+
+  </div>
+
+</div>

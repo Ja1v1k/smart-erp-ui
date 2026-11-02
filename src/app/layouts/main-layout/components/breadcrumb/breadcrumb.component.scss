@@ -1,0 +1,39 @@
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 24px;
+
+  font-size: 13px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--text-secondary);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  mat-icon {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+  }
+
+  .separator {
+    color: var(--text-muted);
+  }
+
+  .current-page {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+}

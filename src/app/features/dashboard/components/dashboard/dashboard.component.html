@@ -1,0 +1,197 @@
+
+<div class="dashboard">
+
+  <!-- Page Header -->
+  <div class="page-header">
+
+    <div>
+      <h1>Dashboard</h1>
+      <p>Welcome back, John! Here's your business overview.</p>
+    </div>
+
+    <button mat-flat-button color="primary">
+      <mat-icon>download</mat-icon>
+      Export Report
+    </button>
+
+  </div>
+
+  <!-- Statistics Cards -->
+  <div class="stats-grid">
+
+    <div class="stat-card">
+      <div class="stat-info">
+        <p>Total Employees</p>
+        <h2>245</h2>
+        <span class="positive">+12% from last month</span>
+      </div>
+
+      <div class="stat-icon blue">
+        <mat-icon>people</mat-icon>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-info">
+        <p>Total Products</p>
+        <h2>1,250</h2>
+        <span class="positive">+8% from last month</span>
+      </div>
+
+      <div class="stat-icon purple">
+        <mat-icon>inventory_2</mat-icon>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-info">
+        <p>Total Sales</p>
+        <h2>₹85,400</h2>
+        <span class="positive">+15% from last month</span>
+      </div>
+
+      <div class="stat-icon green">
+        <mat-icon>trending_up</mat-icon>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-info">
+        <p>Total Customers</p>
+        <h2>560</h2>
+        <span class="negative">-2% from last month</span>
+      </div>
+
+      <div class="stat-icon orange">
+        <mat-icon>groups</mat-icon>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dashboard Content -->
+  <div class="dashboard-grid">
+
+    <!-- Recent Sales -->
+    <section class="dashboard-card sales-section">
+
+      <div class="section-header">
+        <h3>Recent Sales</h3>
+
+        <button mat-button color="primary">
+          View All
+        </button>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="sales-table">
+
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Product</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Rahul Shah</td>
+              <td>Laptop</td>
+              <td>₹55,000</td>
+              <td>
+                <span class="status completed">
+                  Completed
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Priya Patel</td>
+              <td>Monitor</td>
+              <td>₹18,000</td>
+              <td>
+                <span class="status pending">
+                  Pending
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Amit Mehta</td>
+              <td>Keyboard</td>
+              <td>₹3,500</td>
+              <td>
+                <span class="status completed">
+                  Completed
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Neha Joshi</td>
+              <td>Mouse</td>
+              <td>₹1,200</td>
+              <td>
+                <span class="status cancelled">
+                  Cancelled
+                </span>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </section>
+
+    <!-- Recent Activities -->
+    <section class="dashboard-card activity-section">
+
+      <div class="section-header">
+        <h3>Recent Activities</h3>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-icon blue">
+          <mat-icon>person_add</mat-icon>
+        </div>
+
+        <div>
+          <p>New employee added</p>
+          <span>Rahul Shah joined the company</span>
+          <small>10 minutes ago</small>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-icon green">
+          <mat-icon>shopping_cart</mat-icon>
+        </div>
+
+        <div>
+          <p>New order received</p>
+          <span>Order #ORD-1025 received</span>
+          <small>30 minutes ago</small>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-icon orange">
+          <mat-icon>inventory</mat-icon>
+        </div>
+
+        <div>
+          <p>Product updated</p>
+          <span>Laptop stock updated</span>
+          <small>1 hour ago</small>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</div>

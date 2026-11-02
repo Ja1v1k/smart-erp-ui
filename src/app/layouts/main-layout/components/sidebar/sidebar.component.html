@@ -1,0 +1,73 @@
+
+<aside class="sidebar">
+
+  <!-- Logo -->
+  <div class="sidebar-brand">
+    <div class="brand-icon">
+      <mat-icon>business</mat-icon>
+    </div>
+
+    <span>ERP System</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav">
+
+    <p class="nav-heading">MAIN MENU</p>
+
+    <a routerLink="/dashboard"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{ exact: true }"
+       class="nav-item">
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </a>
+
+    <p class="nav-heading">MANAGEMENT</p>
+
+    <a routerLink="/employees"
+       routerLinkActive="active"
+       class="nav-item">
+      <mat-icon>people</mat-icon>
+      <span>Employees</span>
+    </a>
+
+    <a routerLink="/products"
+       routerLinkActive="active"
+       class="nav-item">
+      <mat-icon>inventory_2</mat-icon>
+      <span>Products</span>
+    </a>
+
+    <a routerLink="/sales"
+       routerLinkActive="active"
+       class="nav-item">
+      <mat-icon>point_of_sale</mat-icon>
+      <span>Sales</span>
+    </a>
+
+    <a routerLink="/customers"
+       routerLinkActive="active"
+       class="nav-item">
+      <mat-icon>groups</mat-icon>
+      <span>Customers</span>
+    </a>
+
+    <p class="nav-heading">SYSTEM</p>
+
+    <a routerLink="/settings"
+       routerLinkActive="active"
+       class="nav-item">
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </a>
+
+  </nav>
+
+  <!-- Sidebar Footer -->
+  <div class="sidebar-footer">
+    <mat-icon>help_outline</mat-icon>
+    <span>Help & Support</span>
+  </div>
+
+</aside>

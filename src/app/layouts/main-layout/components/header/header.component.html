@@ -1,0 +1,66 @@
+<header class="header">
+
+  <!-- Left Section -->
+  <div class="header-left">
+
+    <button mat-icon-button aria-label="Toggle sidebar">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="search-box">
+      <mat-icon>search</mat-icon>
+
+      <input type="text" placeholder="Search anything..." />
+    </div>
+
+  </div>
+
+  <!-- Right Section -->
+  <div class="header-right">
+
+    <button mat-icon-button aria-label="Notifications">
+      <mat-icon matBadge="3" matBadgeColor="warn" matBadgeSize="small">
+        notifications_none
+      </mat-icon>
+    </button>
+
+    <button mat-icon-button aria-label="Help">
+      <mat-icon>help_outline</mat-icon>
+    </button>
+
+    <!-- Profile -->
+    <button mat-button class="profile-button" [matMenuTriggerFor]="profileMenu">
+      <div class="profile">
+        <div class="avatar">JD</div>
+
+        <div class="profile-info">
+          <span class="profile-name">John Doe</span>
+          <span class="profile-role">Administrator</span>
+        </div>
+
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </div>
+
+
+    </button>
+
+    <mat-menu #profileMenu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person</mat-icon>
+        My Profile
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        Settings
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+    </mat-menu>
+
+  </div>
+
+</header>

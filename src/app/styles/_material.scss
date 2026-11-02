@@ -1,0 +1,36 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$erp-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+  ),
+  density: (
+    scale: 0,
+  ),
+));
+
+:root {
+  @include mat.all-component-themes($erp-theme);
+}
+
+// Consistent shape and typography for Material buttons across the application.
+.mat-mdc-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button,
+.mat-mdc-outlined-button {
+  --mdc-text-button-container-shape: 8px;
+  --mdc-filled-button-container-shape: 8px;
+  --mdc-protected-button-container-shape: 8px;
+  --mdc-outlined-button-container-shape: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.mat-mdc-icon-button {
+  color: var(--text-secondary);
+}
